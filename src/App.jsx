@@ -3,17 +3,17 @@ import Home from "./Pages/Home"
 import About from "./Pages/About"
 import Services from "./Pages/Services"
 import Navbar from "./Components/Navbar"
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 function App() {
 
   return (
-    <div className=' px-5 lg:px-0  py-10'>
+    <div className='flex flex-col px-5 lg:px-0 py-10'>
       <BrowserRouter>
-       {/* <Navbar />*/}
+
         <Home />
-        <About />
-        <Services />
+      { /* <About />
+        <Services />*/}
       </BrowserRouter>
     </div>
   )

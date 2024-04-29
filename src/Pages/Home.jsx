@@ -12,20 +12,23 @@ import FirstElipse from '../Components/FirstElipse.jsx'
 import SecondElipse from '../Components/SecondElipse.jsx'
 import ThirdElipse from '../Components/ThirdElipse.jsx'
 import FourthElipse from '../Components/FourthElipse.jsx'
+import About from './About.jsx';
+import Services from './Services.jsx';
+
 
 
 export default function Home() {
   return (
     <div id='home'>
       <Navbar />
-      <span className='z-20 absolute top-[-50px] right-0'><FirstElipse/></span>
-      <span className='hidden-on-phone absolute top-[-200px] lg:right-0 '><SecondElipse/></span>
+      <span className='z-20 absolute top-[-50px] right-0'><FirstElipse /></span>
+      <span className='hidden-on-phone absolute top-[-200px] lg:right-0 '><SecondElipse /></span>
       <span className='hidden-on-phone absolute top-[-50px] right-60'><ThirdElipse /></span>
       <span className='hidden-on-phone absolute top-[-50px] right-80'> <FourthElipse /></span>
-    
+
       <section className=' z-30 absolute top-10 right-0 mt-20 my-background w-[100%] flex flex-col justify-items-start'>
         <div className='mt-[-80px] lg:mt-[-40px] w-full flex flex-col text-center items-center'>
-          <button className='mt-40 lg:w-[300px] font-semibold justify-around bg-lightpurple border-purple border-4 rounded-full px-2 lg:px-5 uppercase flex items-center text-[10px] lg:text-[14px] leading-10 '> <span className='mr-2'><LogoIpsumSvg /></span>introducing codala</button>
+          <button className='mt-40 lg:w-[300px] font-semibold justify-around bg-lightpurple border-purple border-2 rounded-full px-2 lg:px-5 uppercase flex items-center text-[10px] lg:text-[14px] leading-10 '> <span className='mr-2'><LogoIpsumSvg /></span>introducing codala</button>
           <h1 className='max-w-[70%] tracking-tighter lg:tracking-[-5px] font-ClashDisplay font-semibold text-[25px] lg:text-[70px] mt-5 lg:mt-10'><span className='block'>Revolutionizing Creativity</span><span >Codala's Software Solutions</span></h1>
           <p className='max-w-[50%] font-Manrope text-[10px] lg:text-[20px] font-medium'>Team of experienced software developers dedicated to creating qualitative solutions</p>
           <div className='flex mt-5 lg:mt-10 justify-items-center]'>
@@ -54,8 +57,14 @@ export default function Home() {
 
 
         </div>
-
+        <About />
+        <Services />
       </section>
+
+
+
+
+
 
     </div>
   )

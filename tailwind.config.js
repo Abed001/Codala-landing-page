@@ -15,10 +15,12 @@ export default {
       dark:'#141414',
       white: '#fff',
       purple: '#8A56F7',
+      darkpurple:"#5E4288",
       blackc: '#0C0C0D',
       blue:'#8A56F7',
       lightpurple:'#CBC3E3',
       grey:'#4E4E4E',
+      liner:'#2159DC',
      
 
     },
