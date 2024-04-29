@@ -1,9 +1,7 @@
 import { React, useState } from 'react'
 import { HashLink as Link } from 'react-router-hash-link';
 import { IoIosArrowForward } from "react-icons/io";
-import { Spin as Hamburger } from 'hamburger-react'
-import Groupvector from '/src/assets/Groupvector.svg'
-import LogoIpsumSvg from './LogoIpsumSvg';
+
 
 export default function Navbar() {
     return (

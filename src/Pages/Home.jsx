@@ -1,6 +1,5 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
-import Groupvector from '/src/assets/Groupvector.svg'
 import LogoIpsumSvg from '../Components/LogoIpsumSvg'
 import { IoIosArrowForward } from "react-icons/io";
 import loom from '../assets/loom.png'
