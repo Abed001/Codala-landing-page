@@ -48,10 +48,10 @@ export default function Home() {
           <img className='hidden-on-phone ml-auto lg:w-[100px] lg:h-[50px] ' src={maze} alt="framer logo" />
           <img className='hidden-on-phone ml-auto lg:w-20 lg:h-[25px]' src={loom} alt="framer logo" />
 
-          <img className='lg:hidden md:hidden  ml-auto w-[80px] h-[20px]' src={square} alt="framer logo" />
-          <img className='lg:hidden md:hidden ml-auto  w-[80px] h-[30px]' src={basecamp} alt="framer logo" />
-          <img className='lg:hidden md:hidden ml-auto  w-[80px] h-[35px] ' src={maze} alt="framer logo" />
-          <img className='lg:hidden md:hidden ml-auto w-[80px] h-[20px]' src={loom} alt="framer logo" />
+          <img className='lg:hidden md:hidden  ml-auto w-[60px] h-[15px]' src={square} alt="framer logo" />
+          <img className='lg:hidden md:hidden ml-auto  w-[60px] h-[25px]' src={basecamp} alt="framer logo" />
+          <img className='lg:hidden md:hidden ml-auto  w-[60px] h-[30px] ' src={maze} alt="framer logo" />
+          <img className='lg:hidden md:hidden ml-auto w-[60px] h-[15px]' src={loom} alt="framer logo" />
 
 
 
