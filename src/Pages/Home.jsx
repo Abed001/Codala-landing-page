@@ -11,8 +11,7 @@ import FirstElipse from '../Components/FirstElipse.jsx'
 import SecondElipse from '../Components/SecondElipse.jsx'
 import ThirdElipse from '../Components/ThirdElipse.jsx'
 import FourthElipse from '../Components/FourthElipse.jsx'
-import About from './About.jsx';
-import Services from './Services.jsx';
+
 
 
 
@@ -56,14 +55,8 @@ export default function Home() {
 
 
         </div>
-        <About />
-        <Services />
+
       </section>
-
-
-
-
-
 
     </div>
   )

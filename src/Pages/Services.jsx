@@ -10,7 +10,7 @@ import servicessampling4 from '../assets/servicessampling4.png'
 import ServicesFirstElipse from '../Components/ServicesFirstElipse.jsx';
 import ServicesSeconsElipse from '../Components/ServicesSeconsElipse.jsx';
 import GroupVector from '../Components/GroupVector.jsx'
-import Testimonials from './Testimonials.jsx';
+
 
 export default function Services() {
   const data = [
@@ -24,10 +24,10 @@ export default function Services() {
 
       <div className=' hidden-on-phone absolute right-0 left-0 top-[1700px] opacity-[30%] -z-10'><GroupVector /></div>
 
-      <div className=' hidden-on-phone absolute right-0 left-0 top-[700px] -z-10'><ServicesBigElipse /></div>
-      <div className='overflow-x-hidden lg:hidden md:hidden absolute right-0 left-0 bottom-[-300px] -z-10 '><SmallServicesBigElipse /></div>
+      <div className=' hidden-on-phone absolute right-0 left-0 top-[900px] -z-10'><ServicesBigElipse /></div>
+      <div className='overflow-x-hidden lg:hidden md:hidden absolute right-0 left-0 top-[1500px] -z-10 '><SmallServicesBigElipse /></div>
       <div className='max-h-[500px]'>
-        <span className=' z-10 hidden-on-phone absolute top-[1500px]  right-[-300px]'><ServicesFirstElipse /></span>
+        <span className=' z-10 hidden-on-phone absolute top-[1500px]  right-0'><ServicesFirstElipse /></span>
         <span className=' z-10 hidden-on-phone absolute top-[1500px]  right-0'><ServicesFirstElipse /></span>
         <span className=' z-10 hidden-on-phone absolute top-[1500px]  right-0'><ServicesFirstElipse /></span>
 
@@ -59,7 +59,6 @@ export default function Services() {
           />
         ))}
       </div>
-      <Testimonials />
     </div>
   )
 }

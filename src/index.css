@@ -35,23 +35,6 @@ html,body{
     z-index: 0; /* Place pseudo-element behind content */
 }
 
-.my-backgroundservices::before {
-  height:100vh;
-  content: "";
-  position: absolute;
-  right: 0;
-  bottom:3000px;
-  left: 0;
-  background-image: url("/src/assets/Groupvector.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.3; /* Adjust this value */
-}
-
-.my-backgroundservices::before {
-z-index: 0; /* Place pseudo-element behind content */
-}
-
 .ColorOpactiy{
   background-color: rgba(0, 0, 255, 0.1);
 }
