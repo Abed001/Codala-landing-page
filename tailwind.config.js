@@ -21,6 +21,8 @@ export default {
       lightpurple:'#CBC3E3',
       grey:'#4E4E4E',
       liner:'#2159DC',
+      lightgrey:"#A3A3A3",
+      footerblack:'#373737',
      
 
     },
