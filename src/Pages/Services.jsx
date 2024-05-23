@@ -8,12 +8,22 @@ import servicessampling4 from '../assets/servicessampling4.png'
 import GroupVector from '../Components/svg/GroupVector.jsx'
 import ServicesBigElipse from '../Components/svg/ServicesBigElipse.jsx'
 import SmallServicesBigElipse from '../Components/svg/SmallServicesBigElipse.jsx'
-import ServicesFirstElipse from '../Components/svg/ServicesFirstElipse.jsx';
-import ServicesSeconsElipse from '../Components/svg/ServicesSeconsElipse.jsx';
 import serviceselipse from "../assets/serviceselipse.png"
+import { motion, useTransform, useScroll } from "framer-motion";
+import { useRef } from "react"
 
 
 export default function Services() {
+
+
+  const ref = useRef(null)
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start start", "end start"]
+  });
+  const opacity = useTransform(scrollYProgress, [0, 0.5], [0.2, 1]);
+
+
   const data = [
     { id: 1, image: servicessampling, title: 'Website Development', desc: "Lorem ipsum dolor sit amet consectetur.Pharetra morbi sed dolor volutpat vivamus a ut. Orci." },
     { id: 2, image: servicessampling2, title: 'Mobile App Development', desc: "Lorem ipsum dolor sit amet consectetur.Pharetra morbi sed dolor volutpat vivamus a ut. Orci." },
@@ -21,7 +31,7 @@ export default function Services() {
     { id: 4, image: servicessampling4, title: 'Artificial Intelligence', desc: "Lorem ipsum dolor sit amet consectetur.Pharetra morbi sed dolor volutpat vivamus a ut. Orci." },
   ];
   return (
-    <div id='services' className=' relative'>
+    <div id='services' className='relative' ref={ref} >
 
       <div className=' hidden-on-phone absolute right-0 left-0 top-[-800px] -z-10'><ServicesBigElipse /></div>
       <div className='overflow-x-hidden lg:hidden md:hidden absolute right-0 left-0 top-[-300px] -z-10 '><SmallServicesBigElipse /></div>
@@ -38,12 +48,14 @@ export default function Services() {
           deleniti? deleniti?
           deleniti? </p>
       </div>
-      <div className='z-50 mt-20 flex flex-col lg:flex-row justify-between px-20 items-center'>
+
+      <motion.div  style={{ opacity }} className='z-50 mt-20 flex flex-col lg:flex-row justify-between px-20 items-center'>
         {data.map((item, index) => (
-          <ServicesCard data={item} key={item.id}
+          <ServicesCard  data={item} key={item.id}
           />
         ))}
-      </div>
+      </motion.div>
+
     </div>
   )
 }
